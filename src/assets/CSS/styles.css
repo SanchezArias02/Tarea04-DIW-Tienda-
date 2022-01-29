@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+    } 
+
+    .ProductoPago{
+      display: flex;
+      margin: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }

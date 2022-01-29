@@ -1,28 +1,38 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="contenedor">
+    <MenuPrincipal/>
+    <Breadcrumbs/>
+      <div class="ProductoPago">
+        <Productos/>
+        <ZonaPago/>
+      </div>
+    <ProductoDescripcion/>
+    <Pie/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Breadcrumbs from './components/Breadcrumb.vue'
+import Productos from './components/Productos.vue'
+import ZonaPago from './components/ZonaPago.vue'
+import ProductoDescripcion from './components/ProductoDescripcion.vue'
+import Pie from './components/Pie.vue'
+import MenuPrincipal from './components/MenuPrincipal.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: { 
+    MenuPrincipal,
+    Breadcrumbs,
+    Productos,
+    ZonaPago,
+    ProductoDescripcion,
+    Pie,
+   
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import './assets/CSS/styles.css';
 </style>
